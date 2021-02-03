@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display+SC:ital@0;1&family=Sacramento&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+*::selection {
+    background-color: rgba(255, 69, 0, .8);
+    color: #fff !important;
+}
+
+span.bro {
+    display: none;
+}
+
+
+.container .mobile-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .mobile-header .logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
+    font-size: 11.7px;
+    padding: 10px 0;
+}
+
+.container .mobile-header .logo img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.container .mobile-header .cart i {
+    margin-right: 30px;
+}
+
+.large-hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: url(https://cdn.shopify.com/s/files/1/0261/4687/t/7/assets/img_homepage_slider1.jpg?v=839847293968337857);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
+.large-hero p.coming {
+    transition: .3s;
+    cursor: pointer;
+}
+
+.large-hero p.coming:hover {
+    color: #c7d93b !important;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.large-hero .cart {
+    display: none;
+}
+
+.large-hero h1 {
+    font-size: 36px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    line-height: 37px;
+    padding-bottom: 23.5px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 4px;
+}
+
+.large-hero p {
+    font-size: 54px;
+    font-family: 'Sacramento', cursive;
+    font-style: normal;
+}
+
+/* Products */
+.products {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0.7rem 0; 
+    /* 2rem = 32px */
+}
+
+
+
+.products .cat-title {
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 11.7px;
+    letter-spacing: 0.5em;
+    color: #444;
+}
+.products .cat-title h1 {
+    font-size: 36px;
+    font-style: italic;
+    color: #1d1a19;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #49423b;
+    width: max-content;
+    margin: auto;
+    margin-bottom: 10.2px;
+}
+
+.products .cat-title p.description {
+    font-family: 'Alice', serif;
+    font-size: 21px;
+    color: #1d1a19;
+    letter-spacing: normal;
+    line-height: 2rem;
+    margin: 5px 0;
+}
+
+.products .catscarf {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+    position: relative;
+}
+
+.products .top{
+    margin-top: 0 !important;
+}
+
+.top-m {
+    margin-top: 3rem;
+}
+.products .categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products .categories .prod-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products .catscarf img {
+    width: 80%;
+}
+
+.products .catscarf .scarf-name {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin: 1rem 0;
+    font-family: 'Sacramento', cursive;
+    font-size: 36px;
+    font-style: normal;
+}
+
+.products .catscarf .scarf-name h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c7c7c7;
+    margin-bottom: 15px;
+}
+
+.products .catscarf .scarf-name h1 span {
+    font-size: 21px;
+}
+
+/* pic-divider */
+
+.pic-divider {
+    width: 100% !important;
+    height: 60vh !important;
+    background: url(https://cdn.shopify.com/s/files/1/0261/4687/t/7/assets/img_homepage_divider.jpg?v=10908527258020221636);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.fashion {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    color: #1d1a19;
+    padding: 12px 0;
+}
+
+.fashion .fashion-title .shop-name {
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 11.7px;
+    letter-spacing: 0.5em;
+    color: #444;
+    margin-top: 10px;
+}
+
+.fashion .fashion-title .shop-text {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Alice", serif;
+    font-style: normal;
+    font-size: 21px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.fashion .fashion-title .shop-text h1 {
+    font-family: "Playfair Display SC", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 36px;
+    padding-bottom: 21px;
+    margin: 10px 0;
+    border-bottom: 1px solid #49423b;
+    width: 100%;
+}
+
+.fashion .shop-details .shop-details--items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.fashion .shop-details .shop-caption {
+    width: 85%;
+    margin: 2rem auto;
+    text-align: center;
+    font-family: 'Alice', serif;
+    font-style: normal;
+    line-height: 28px;
+    color: #444;
+}
+
+.fashion .shop-details .shop-caption h1 {
+    font-family: 'Playfair Display SC', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 2.3rem;
+}
+
+.fashion .shop-details .shop-caption hr.divide {
+    width: 130px;
+    margin: 15px auto;
+    border-bottom: none;
+    border-top: 1px solid #49423b;
+}
+
+@media(min-width: 640px){
+    /* Large-hero */
+    .large-hero h1 {
+        font-size: 81px;
+        line-height: 80px;
+    }
+
+    .large-hero p {
+        font-size: 72px;
+    }
+
+    .products .cat-title h1 {
+        font-size: 72px;
+        padding: 0 72px;
+    }
+
+    .products .categories .prod-container {
+        flex-direction: row !important;
+        justify-content: space-around;
+    }
+    .products .prod-container .catscarf {
+        width: 30%;
+        margin-top: 0 !important;
+    }
+
+    .products .categories {
+        min-height: 80vh;
+    }
+    
+}
+
+@media(min-width: 1024px){
+    .mobile-header {
+        display: none !important;
+    }
+
+    .large-hero .cart {
+        display: block;
+        position: absolute;
+        top: 3.5rem;
+        right: 3.5rem;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .large-hero .cart:hover {
+        color: #c7d93b;
+    }
+
+    .nav-bar {
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .nav-bar ul .menu-logo {
+        margin: 0 2rem;
+        cursor: pointer;
+    }
+
+    .nav-bar ul .menu-logo img {
+        width: 108px;
+    }
+
+    .nav-bar ul .menu-logo p {
+        font-family: 'Playfair Display SC', serif;
+        font-size: 10.5px;
+        text-align: center;
+        margin-top: 0.7rem;
+        margin-left: 5px;
+        transition: .3s;
+        letter-spacing: 2px;
+    }
+
+    .nav-bar ul .menu-logo:hover p {
+        color: #c7d93b;
+    }
+
+    .nav-bar ul li {
+        list-style: none;
+        padding: 12px 32px;
+        font-family: 'Alice', serif;
+        border-bottom: 1px solid rgba(255,255,255, .3);
+        cursor: pointer;
+        transition: .3s;
+        letter-spacing: 2px;
+    }
+
+    .nav-bar ul li:nth-child(3) {
+        border-bottom: none;
+        text-transform: uppercase;
+        font-size: 10.5px;
+    }
+
+    .nav-bar ul li:hover {
+        color: #c7d93b;
+    }
+}
+
+@media(min-width: 768px) {
+    .large-hero h1 {
+        width: max-content;
+        padding-left: 81px;
+        padding-right: 81px;
+        padding-bottom: 2.5rem;
+    }
+
+    span.mob {
+        display: none !important;
+    }
+
+    span.bro {
+        display: inline !important;
+        margin-right: 2rem;
+    }
+
+    .catscarf {
+        justify-content: center;
+    }
+
+    .products .categories {
+        padding: 1rem 0;
+    }
+
+    .scarf-name {
+        position: absolute;
+        width: 90%;
+        margin: auto;
+        background-color: rgba(29, 26, 25, 0.5);
+        height: 85%;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff !important;
+        cursor: pointer;
+        display: none;
+        transition: .3s !important;
+    }
+
+    .catscarf:hover .scarf-name{
+        display: flex;
+    }
+
+    .scarf-name h1 {
+        margin-bottom: 0 !important;
+    }
+    
+    .scarf-name p {
+        transition: .3s;
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    .scarf-name:hover p {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .scarf-name p:hover {
+        color: #c7d93b;
+    }
+}
+
+@media(min-width: 1140px){
+    .scarf-name {
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+
+    .products .categories {
+        padding: 5rem 0;
+    }
+}
+
+/* SASS - Syntactically awesome stylesheet */
+/* CSS - Cascading stylesheet */
