@@ -1,4 +1,14 @@
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
+}
+
+*::selection {
+    background-color: #f15a22;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
 }

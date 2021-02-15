@@ -1,5 +1,136 @@
-.test {
+.header {
     width: 100%;
-    margin: auto;
-    @include titleSection;
+    position: relative;
+
+    &__mobile-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        @include shopName($mainBlack);
+
+        .mob-logo {
+            width: 55%;
+            display: flex;
+            align-items: center;
+            img {
+                width: 50px;
+                margin: 0 10px;
+            }
+        }
+
+        .mob-cart {
+            width: 45%;
+            text-align: right;
+            font-size: 18px;
+            margin-right: 1rem;
+        }
+
+        @media(min-width: 1024px){
+            & {
+                display: none;
+            }
+        }
+    }
+
+    &__large-hero {
+        width: 100%;
+        height: 100vh;
+        background-image: url("//cdn.shopify.com/s/files/1/0261/4687/t/7/assets/img_homepage_slider1.jpg?v=839847293968337857");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        @include centeralize;
+
+        .large-title {
+            color: #fff !important;
+            @include titleSection($sacramento);
+
+            h1 {
+                border-bottom-color: #fff !important;
+                font-size: 36px;
+                font-style: italic;
+                padding-left: 36px;
+                padding-right: 36px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 54px;
+                transition: .3s;
+                cursor: pointer;
+                &:hover {
+                    color: $hoverGreen;
+                }
+            }
+
+            @media(min-width: 640px){
+                h1 {
+                    font-size: 81px;
+                    padding-left: 81px;
+                    padding-right: 81px;
+                }
+
+                p {
+                    font-size: 72px;
+                }
+            }
+        }
+    }
+
+    &__desktop-nav {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1rem 0;
+        font-size: 16px;
+        font-family: $alice;
+        color: $mainWhite;
+        display: none;
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                list-style: none;
+                padding: 12px 32px;
+                border-bottom: 1px solid $menuBorderColor;
+                a {
+                    text-decoration: none;
+                    letter-spacing: .1em;
+                    color: $mainWhite;
+                    transition: .3s;
+                    &:hover {
+                        color: $hoverGreen;
+                    }
+                }
+            }
+
+            .logo {
+                @include centeralize;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 3rem;
+
+                img {
+                    width: 101px;
+                    margin-bottom: 10px
+                }
+
+                p {
+                    @include shopName($mainWhite);
+                    transition: .3s;
+                    &:hover {
+                        color: $hoverGreen;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        @media(min-width: 1024px){
+            display: block;
+        }
+    }
 }
