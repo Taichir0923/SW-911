@@ -43,5 +43,5 @@ body {
 }
 
 .pressed {
-    background-color: darkgray;
+    background-color: darkgray !important;
 }
