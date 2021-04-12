@@ -59,3 +59,6 @@ modal.addEventListener('click', function(e){
         e.target.classList.remove('open');
     }
 })
+
+
+// let bla = /$[a-z]/
