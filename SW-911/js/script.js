@@ -90,7 +90,7 @@ document.addEventListener('keydown', e => {
 });
 
 document.addEventListener('keyup', function(){
-    whiteKeys.forEach(el => {
+    whiteKeys.forEach((el, index) => {
         el.classList.remove('pressed');
     });
 
