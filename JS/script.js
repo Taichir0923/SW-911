@@ -71,6 +71,8 @@
 // remove - ustgana
 // rgb(0-255,0-255,0-255)
 
+// insertAdjacentHTML
+
 const addBtn = document.querySelector('#addBox');
 const container = document.createElement('div');
 const modalBox = document.querySelector('.modalBox');
