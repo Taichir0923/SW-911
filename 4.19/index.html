@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input, select, button {
+            display: block !important;
+        }
+
+        #loginEmail {
+            margin-top: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto flex flex-column justify-center items-center">
+        <input type="text" placeholder="username" id="username">
+        <input type="number" placeholder="age" id="age">
+        <input type="number" placeholder="phone number" id="number">
+        <input type="email" placeholder="email" id="email">
+        <select id="select">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <button id="registrate">Registrate</button>
+    </div>
+
+    <input type="email" id="loginEmail" placeholder="email">
+    <input type="password" id="loginPass" placeholder="password">
+    <input type="button" value="Login" id="loginBtn">
+    
+    <script src="script.js"></script>
+</body>
+</html>
